@@ -1,6 +1,6 @@
 import Image from "next/image";
-import Classes from "../app/classes";
-import Button from "../app/button";
+import Classes from "./classes";
+import Button from "./button";
 
 export default function Home() {
   

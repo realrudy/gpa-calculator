@@ -1,7 +1,7 @@
 import localFont from "next/font/local";
 import "./globals.css";
 import { Poppins } from "next/font/google";
-import Classes from "../app/classes";
+import Classes from "./classes";
 
 const poppins = Poppins({
   subsets: ['latin'],
