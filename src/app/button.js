@@ -8,6 +8,8 @@ export default function Button() {
     function calculate() {
         const grades = {
             "A": 4,
+            "A-": 4,
+            "A+":4,
             "B+": 3.3,
             "B": 3,
             "B-": 2.7,
@@ -25,7 +27,7 @@ export default function Button() {
 
         for (let i = 0; i < 7; i++) {
             const box = document.getElementById(i);
-            if (box && box.value in grades) {
+            if (box && (box.value in grades).toUpperscase()) {
                 totalGradePoints += grades[box.value];
                 validGrades++;
             }
