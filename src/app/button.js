@@ -27,7 +27,7 @@ export default function Button() {
 
         for (let i = 0; i < 7; i++) {
             const box = document.getElementById(i);
-            if (box && (box.value in grades).toUpperscase()) {
+            if (box && (box.value in grades).toUppercase()) {
                 totalGradePoints += grades[box.value];
                 validGrades++;
             }
